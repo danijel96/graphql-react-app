@@ -26,9 +26,9 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  res.send("APP IS RUNNING");
-});
+//app.get("/", (req, res) => {
+//  res.send("APP IS RUNNING");
+//});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
