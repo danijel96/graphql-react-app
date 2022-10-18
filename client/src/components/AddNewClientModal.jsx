@@ -27,7 +27,6 @@ export default function AddNewClientModal() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(name, email, phone);
     if (name === "" || email === "" || phone === "") {
       return alert("Fill all fields!");
     }
@@ -37,7 +36,6 @@ export default function AddNewClientModal() {
     setemail("");
     setphone("");
 
-    // console.log(name.current.value, email.current.value, phone.current.value);
     // if (
     //   name.current.value === "" ||
     //   email.current.value === "" ||

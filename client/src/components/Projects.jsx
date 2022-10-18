@@ -7,7 +7,6 @@ import Spinner from "./Spinner";
 export default function Projects() {
   const { loading, errors, data: projectsData } = useQuery(GET_PROJECTS);
 
-  console.log(projectsData);
   if (loading) {
     return <Spinner />;
   }

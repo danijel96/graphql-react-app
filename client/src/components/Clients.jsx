@@ -7,7 +7,6 @@ import Spinner from "./Spinner";
 export default function Clients() {
   const { loading, errors, data: clientsData } = useQuery(GET_CLIENTS);
 
-  console.log(clientsData);
   if (loading) {
     return <Spinner />;
   }

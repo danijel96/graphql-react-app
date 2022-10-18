@@ -28,11 +28,9 @@ export default function AddNewProjectModal() {
       });
     },
   });
-  console.log(status, "status");
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(name, description, status);
     if (name === "" || description === "" || status === "") {
       return alert("Fill all fields!");
     }
@@ -43,7 +41,6 @@ export default function AddNewProjectModal() {
     setstatus("");
     setclientId("");
 
-    // console.log(name.current.value, email.current.value, phone.current.value);
     // if (
     //   name.current.value === "" ||
     //   email.current.value === "" ||
