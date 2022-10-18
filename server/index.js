@@ -12,7 +12,7 @@ const { graphqlHTTP } = require("express-graphql");
 
 const app = express();
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, '../client/public', 'favicon.ico')))
 
 connectDB();
 
