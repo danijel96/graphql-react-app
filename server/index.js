@@ -1,4 +1,5 @@
 const express = require("express");
+var favicon = require('serve-favicon')
 const colors = require("colors");
 require("dotenv").config();
 const cors = require("cors");
@@ -10,6 +11,8 @@ const path = require("path");
 const { graphqlHTTP } = require("express-graphql");
 
 const app = express();
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 connectDB();
 
